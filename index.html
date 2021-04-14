@@ -12,13 +12,15 @@
 
 
     <a-scene>
-        <a-camera rotation="0 0 0" wsad-controls look-controls>
+    <a-camera rotation="0 0 0" wsad-controls look-controls>
         </a-camera>
         <a-assets>
-            <!--a-asset-item id="phoenix" src="phoenix_bird/scene.gltf" crossOrigin=""-->
+            <!--a-asset-item id="phoenix" src="../../3dmodels/real-time_bones_demo_phoenix_bird/scene.gltf" crossOrigin=""-->
         <a-asset-item id="phoenix" src="phoenix_bird/scene.gltf"></a-asset-item>
+        <a-asset-item id="plane" src="russia/scene.gltf"></a-asset-item>
         </a-assets>
-        <a-entity gltf-model="#phoenix"  scale="0.001 0.001 0.001" animation-mixer=" loop:repeat"></a-entity>
+        <a-entity gltf-model="#phoenix"  scale="0.001 0.001 0.001" animation-mixer=" loop:repeat" position="1.5 0 0"></a-entity>
+        <a-entity gltf-model="#plane"  scale="0.5 0.5 0.5" animation-mixer=" loop:repeat" position="-1.5 0 0"></a-entity>
 
 
 
